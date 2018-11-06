@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+@font-face{
+  font-family: Telefon;
+  src: url('fonts/telefon.ttf');
+  font-family: Open Sans Semibold;
+  src: url('fonts/OpenSans-Semibold.ttf');
+}
+
+body{
+	background-color: #ffffff;
+	font-family: Open Sans Semibold, Georgia, Times New Roman;
+	color: #000000;
+}
+
+#header{
+	width: 100%;
+}
+
+.nav-link, .nav-item{
+  font-size: 18px;
+}
+
+.dropdown-menu{
+  margin-top: 7px;
+}
+
+.dropdown-item:hover{
+  background-color: rgb(230,230,230);
+}
+
+div.gallery
+{
+	box-shadow: 3px 3px 10px grey;
+}
+
+#searchbox{
+	position: relative;
+	left: 40%;
+	right:40%;
+	width: 20%;
+}
+
+#greybar{
+	background-color: rgb(34,34,34);
+}
+#logincont{
+	background-image: url(images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}

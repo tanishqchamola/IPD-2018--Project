@@ -1,0 +1,231 @@
+<html>
+<head>
+
+<title>
+COMPUTATION DATABASE
+</title>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  	<link rel = "stylesheet" type ="text/css" href= "style.css">
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+
+<body>
+
+<div class="jumbotron" style="margin-bottom: 0px;">
+	<h1>CHANDIGARH COLLEGE OF ENGINERING AND TECHNOLOGY</h1>
+	<p><h5>Signed in as <?=$_SESSION['sess_fullname'];?>.</h5></p>	
+</div>
+
+	<nav class="navbar navbar-default sticky-top navbar-expand-md navbar-dark bg-primary">
+
+		<a class="navbar-brand" href="#">CCET</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarmenu">
+			<ul class="navbar-nav ml-auto"> <!-- ml for right, md for left, mx for centre (alignment)-->
+				
+				<li class="nav-item active">
+					<a class="nav-link" href="index.php">Home</a>
+				</li>
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">Department</a>
+					<span class="caret"></span>
+
+					<div class="dropdown-menu" aria-labelledby="navbardropdown"> <!-- aria-labelledby used for pointing where it is linked to-->
+						<a class="dropdown-item" href="#">CSE</a>
+
+      					<a class="dropdown-item" href="#">ECE</a>
+      					
+      					<a class="dropdown-item" href="#">MECH</a>
+      					
+      					<a class="dropdown-item" href="#">CIVIL</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">Faculty</a>
+					<span class="caret"></span>
+
+					<div class="dropdown-menu" aria-labelledby="navbardropdown"> <!-- aria-labelledby used for pointing where it is linked to-->
+						<a class="dropdown-item" href="csefaculty.html">CSE</a>
+
+      					<a class="dropdown-item" href="#">ECE</a>
+      					
+      					<a class="dropdown-item" href="mechfaculty.html">MECH</a>
+      					
+      					<a class="dropdown-item" href="#">CIVIL</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">Search</a>
+					<span class="caret"></span>
+
+					<div class="dropdown-menu" aria-labelledby="navbardropdown"> <!-- aria-labelledby used for pointing where it is linked to-->
+						<a class="dropdown-item" href="db2.php">Faculty</a>
+      					
+      					<a class="dropdown-item" href="lab.php">Room No.</a>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="team.html">Team</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="contact us.html">Contact Us</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="logout.php">Logout</a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+
+<img src="images/HEADER2.jpg" id="header" alt="">
+	
+<div>
+<p>
+
+	<h1 style=" text-align: center;"><font face="Open Sans Semibold"><br><strong>DEPARTMENT OF MECHANICAL ENGINEERING</strong></font></h1><br><br><br>
+<div class="container">
+
+ <div class="row">
+
+  	<div class="col-6 "; style="width: 40%">
+    <img src="images/jatindermadan.jpg" width="200" style="border-radius: 3px">
+    <font face="Open Sans Semibold">
+		<br><br><b><font size="5">DR. JATINDER MADAN</font><br><br></b>
+		<b>Educational qualification:</b>  B.E. (Panjab University), M.E. (Thapar Institute of Engg. and Tech.), Ph. D (IIT Delhi) <br>
+		<b>Area of Specialisation:</b> Sustainable Design and Manufacturing, Computer-aided Design and Manufacturing (CAD/CAM), Design Automation, Design for Manufacture and Assembly (DFMA), Smart Manufacturing, Product Design and Development<br>
+		<b>Additional role in college:</b> Professor In-charge Academic Affairs Head, Mechanical Engineering Department Chairman, Technical Purchase Committee<br>
+		<b>Contact:</b> jatindermadan@ccet.ac.in</font>
+  	</div>
+
+  	<div class="col-6"; style="width: 40%">
+    <img src="images/vettivel.jpg" width="200" style="border-radius: 3px">
+    <font face="Open Sans Semibold">
+		<b><br><br><font size="5">DR. VETTIVEL S C</font><br><br></b>
+		<b>Educational qualification:</b> B.E. (Mechanical Engineering/ Manonmaniam Sundaranar University, Tamilnadu.), M.E. (Production Engineering / Annamalai University, Chidambaram,Tamilnadu), Ph.D (Mechanical Engineering / Anna University, Chennai, Tamilnadu)<br>
+		<b>Area of Specialisation:</b>Powder Metallurgy, Nano Composite, Smart Manufacturing, Tribology, Coating of Materials and Production Engineering .<br>
+		<b>Contact:</b> scvettivel@ccet.ac.in, +91-9865822376.
+
+	</font></div>
+
+
+</div> 
+<br><br>
+<div class="row">
+
+
+	<div class="col-6"; style="width: 40%">
+    <img src="images/radheysham.jpg" width="200" style="border-radius: 3px">
+    <font face="Open Sans Semibold">
+		<b><br><br><font size="5">DR. RADHEY SHAM</font><br><br></b>
+		<b>Educational qualification:</b>B.E. (Mechanical Engineering), M.E. (CAD/CAM & Robotics), PhD (Mechanical Engineering) <br>
+		<b>Area of Specialisation:</b>Thermal Engineering , CRYOGENICS and IC Engines<br>
+		<b>Contact:</b> radheysham@ccet.ac.in, 9888040982.
+
+	</font></div>
+
+
+	<div class="col-6"; style="width: 40%">
+	<img src="images/ashwanikumar.jpg" width="200" style="border-radius: 3px">
+	<font face="Open Sans Semibold">
+		<b><br><br><font size="5">DR. ASHWANI KUMAR</font><br><br></b>
+		<b>Educational qualification:</b>Ph. D (Mechanical Engineering), M.E. (Mechanical Engineering), B. Tech. (Mechanical Engineering) <br>
+		<b>Area of Specialisation:</b>Thermal ,Design and M.R. Fluids.<br>
+		<b>Additional role in college:</b>In-charge Technical club (Mechanical Engineering), In- Charge Training (Mechanical Engineering).<br>
+		<b>Contact:</b>ashwanikumar@ccet.ac.in, 09872823250.
+
+	</font></div>
+
+</div>
+<br><br>
+
+<div class="row">
+ 	<div class="col-6 "; style="width: 40%">
+	<img src="images/vinodchauhan.jpg" width="200" style="border-radius: 3px">
+	<font face="Open Sans Semibold">
+		<b><br><br><font size="5">ER. VINOD KUMAR</font><br><br></b>
+		<b>Educational qualification:</b> M.E. (Mechanical), B. Tech. (Mechanical).<br>
+		<b>Area of Specialisation:</b> Design of Mechanical Equipments, Mechanics of Mateials, Theory of Machines.<br>
+		<b>Additional role in college:</b>Incharge (Fire-Fighting, water coolers & Air Conditioners), Member- NSS, Class Incharge 2014 Batch (ME), Lab Incharge (MOM Lab, EG Lab and Project Lab) <br>
+		<b>Contact:</b>	vinodchauhan@ccet.ac.in, 9466736896.
+
+	</font></div>
+
+	<div class="col-6 "; style="width: 40%">
+	<img src="images/mukeshkumar.jpg" width="200" style="border-radius: 3px">
+	<font face="Open Sans Semibold">
+		<b><br><br><font size="5">DR. MUKESH KUMAR</font><br><br></b>
+		<b>Educational qualification:</b> B.TECH.,M.E., Ph.D. (Pursuing) <br>
+		<b>Area of Specialisation:</b> Production Engineering.<br>
+		<b>Additional role in college:</b> Assistant Professor In-charge(Exam & Results), NSS/ NCC Program officer, Joint In-charge Sessional, Incharge(Exam & Results): CSE Department, Member NBA of Committee: CSE Department, Joint In-charge Stationary: CSE Department.<br>
+		<b>Contact:</b>	mukeshkumar@ccet.ac.in, 9478420561.
+
+	</font></div>
+
+</div>
+<br><br>
+
+ <div class="row">
+
+ 		<div class="col-6 "; style="width: 40%">
+		<img src="images/vsenthil.jpg" width="200" style="border-radius: 3px">
+	 	<font face="Open Sans Semibold">
+		<b><br><br><font size="5">ER. V SENTHIL</font><br><br></b>
+		<b>Educational qualification:</b>B.E(Mechanical/Government college of Engineering, Salem(University of Madras, Tamil Nadu)), M.E.(CIM/College of Engineering, Guindy(Anna University, Tamil Nadu)), Ph. D. (Pursuing) in the area of 3-D Printing <br>
+		<b>Area of Specialisation:</b>Computer Aided Design, Computer Aided Manufacturing, Computer Integrated Manufacturing, Rapid Prototyping.<br>
+		<b>Additional role in college:</b> Faculty In-Charge Legal Literacy Club, Faculty In-Charge National Cadet Crops, Member-Institute Quality Audit Cell <br>
+		<b>Contact:</b> vsenthil@ccet.ac.in, 09884121196.
+
+</font></div>
+
+	<div class="col-6 "; style="width: 40%">
+	<img src="images/rajiv.jpg" width="200" style="border-radius: 3px">
+	 <font face="Open Sans Semibold">
+		<b><br><br><font size="5">ER. RAJIV KUMAR</font><br><br></b>
+		<b>Educational qualification:</b> M-Tech, (Pursuing Ph.D) <br>
+		<b>Area of Specialisation:</b>Machine Design & Manufacturing.<br>
+		<b>Contact:</b> er_ rajiv3444@yahoo.co.in
+</font></div>
+</div>
+<br><br>
+
+ <div class="row">
+
+ 		<div class="col-6 "; style="width: 30%">
+		<img src="images/nipun.jpg" width="200" style="border-radius: 3px">
+	 	<font face="Open Sans Semibold">
+		<b><br><br><font size="5">ER. NIPUN SHARMA</font><br><br></b>
+		<b>Educational qualification:</b> B. Tech. (Mech.), M. Tech. (Mech. & M/c Design).<br>
+		<b>Area of Specialisation:</b>Machine Design.<br>
+		<b>Additional role in college:</b>In-charge of : 1. Results Re-appear 2. Sports 3. Air Conditioners 4. Water Purifier 5. Fire Fighting 6. Water Coolers.<br>
+		<b>Contact:</b>nipun_sharma27@yahoo.com<br><br><br>
+</font></div>
+</div>
+</div>
+</p>	
+
+</body>
+</html>

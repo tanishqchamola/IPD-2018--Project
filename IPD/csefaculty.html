@@ -1,0 +1,267 @@
+<html>
+<head>
+
+<title>
+COMPUTATION DATABASE
+</title>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  	<link rel = "stylesheet" type ="text/css" href= "style.css">
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+
+<body>
+
+<div class="jumbotron" style="margin-bottom: 0px;">
+	<h1>CHANDIGARH COLLEGE OF ENGINERING AND TECHNOLOGY</h1>
+	<p><h5>Signed in as <?=$_SESSION['sess_fullname'];?>.</h5></p>	
+</div>
+
+	<nav class="navbar navbar-default sticky-top navbar-expand-md navbar-dark bg-primary">
+
+		<a class="navbar-brand" href="#">CCET</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarmenu">
+			<ul class="navbar-nav ml-auto"> <!-- ml for right, md for left, mx for centre (alignment)-->
+				
+				<li class="nav-item active">
+					<a class="nav-link" href="index.php">Home</a>
+				</li>
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">Department</a>
+					<span class="caret"></span>
+
+					<div class="dropdown-menu" aria-labelledby="navbardropdown"> <!-- aria-labelledby used for pointing where it is linked to-->
+						<a class="dropdown-item" href="#">CSE</a>
+
+      					<a class="dropdown-item" href="#">ECE</a>
+      					
+      					<a class="dropdown-item" href="#">MECH</a>
+      					
+      					<a class="dropdown-item" href="#">CIVIL</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">Faculty</a>
+					<span class="caret"></span>
+
+					<div class="dropdown-menu" aria-labelledby="navbardropdown"> <!-- aria-labelledby used for pointing where it is linked to-->
+						<a class="dropdown-item" href="csefaculty.html">CSE</a>
+
+      					<a class="dropdown-item" href="#">ECE</a>
+      					
+      					<a class="dropdown-item" href="mechfaculty.html">MECH</a>
+      					
+      					<a class="dropdown-item" href="#">CIVIL</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">Search</a>
+					<span class="caret"></span>
+
+					<div class="dropdown-menu" aria-labelledby="navbardropdown"> <!-- aria-labelledby used for pointing where it is linked to-->
+						<a class="dropdown-item" href="db2.php">Faculty</a>
+      					
+      					<a class="dropdown-item" href="lab.php">Room No.</a>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="team.html">Team</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="contact us.html">Contact Us</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="logout.php">Logout</a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+
+<img src="images/HEADER2.jpg" id="header" alt="">
+
+<div>
+<p>
+
+	<h1 style=" text-align: center;"><font face="Open Sans Semibold"><br><strong>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</strong></font></h1><br><br><br>
+<div class="container">
+
+ <div class="row">
+
+  	<div class="col-6"; style="width: 40%">
+    <img src="images/principal.jpg" width="200" style="border-radius: 3px">
+    <font face="Open Sans Semibold">
+		<br><br><b><font size="5">DR. MANPREET SINGH GUJRAL</font><br><br></b>
+		<b>Educational qualification:</b> BE, ME, Phd.<br>
+		<b>Area of Specialisation:</b> Computer Networks & Information Security.<br>
+		<b>Additional role in college:</b> Principal of the College<br>
+		<b>Contact:</b> principal@ccet.ac.in</font>
+  	</div>
+
+  	<div class="col-6"; style="width: 40%">
+    <img src="images/sksingh.jpg" width="200" style="border-radius: 3px">
+    <font face="Open Sans Semibold">
+		<b><br><br><font size="5">DR. SUNIL K. SINGH</font><br><br></b>
+		<b>Educational qualification:</b> B.E.(CSE), M.E.(CSE), PHD(CSE).<br>
+		<b>Area of Specialisation:</b> Reconfigurable Computing,High Performance Computing, Embedded System, Linux.<br>
+		<b>Additional role in college:</b> Professor In-charge Industry Institute Relations, Professor In-charge Institute Public Relation, Faculty mentor ACM@CCET Student Chapter Member,UT State Screening committee(TEQIP).<br>
+		<b>Contact:</b> sksingh@ccet.ac.in, +91-172-2750.
+	</font></div>
+
+
+</div> 
+<br><br>
+<div class="row">
+
+
+	<div class="col-6"; style="width: 40%">
+    <img src="images/rbpatel.jpg" width="200" style="border-radius: 3px">
+    <font face="Open Sans Semibold">
+		<b><br><br><font size="5">DR. R. B. PATEL</font><br><br></b>
+		<b>Educational qualification:</b> B.E.(CSE), M.E.(CSE), PHD(CSE), PDF(CSE).<br>
+		<b>Area of Specialisation:</b> Mobile & Distributed Computing.<br>
+		<b>Additional role in college:</b> Professor Incharge Examination & Results, Professor Incharge Admissions, Professor Incharge Scholarship.<br>
+		<b>Contact:</b> rbpatel@ccet.ac.in
+	</font></div>
+
+
+	<div class="col-6"; style="width: 40%">
+	<img src="images/varungupta.jpg" width="200" style="border-radius: 3px">
+	<font face="Open Sans Semibold">
+		<b><br><br><font size="5">DR. VARUN GUPTA</font><br><br></b>
+		<b>Educational qualification:</b> B.Tech.(CSE), M.E.(CSE), PHD.<br>
+		<b>Area of Specialisation:</b> Deep Learning, Machine Learning, Big Data Analytics, Smart Grid, Software Engineering, Object-Orientation, ERP Systems, AMR Systems.<br>
+		<b>Additional role in college:</b> Central Store & Purchase Officer Incharge, Institute Publication Cell.<br>
+		<b>Contact:</b> varungupta@ccet.ac.in, LinkedIn: https://www.linkedin.com/in/varun-gupta-9537639/
+	</font></div>
+
+</div>
+<br><br>
+
+<div class="row">
+ 	<div class="col-6 "; style="width: 40%">
+	<img src="images/dsingh.jpg" width="200" style="border-radius: 3px">
+	<font face="Open Sans Semibold">
+		<b><br><br><font size="5">DR. DHEERENDRA SINGH</font><br><br></b>
+		<b>Educational qualification:</b> B.E.(CSE), M.Tech.(CSE), PhD(CSE).<br>
+		<b>Area of Specialisation:</b> RCloud Computing, Web Engineering, S\W Engineering, Operating Systems, Data Structures & Programming, UNIX \ LINUX Shell Programming, C, C++ Language.<br>
+		<b>Additional role in college:</b> In-charge Computational, In-charge Website,I/C Networking, Jt. I/C AICTE/AISHE/NIRF@CCET, I/C Academics CSE Deptt., Warden Boys Hostel(Degree Wing)<br>
+		<b>Contact:</b> dsingh@ccet.ac.in, 9876439071.
+	</font></div>
+
+	<div class="col-6 "; style="width: 40%">
+	<img src="images/gulshangoyal.jpg" width="200" style="border-radius: 3px">
+	<font face="Open Sans Semibold">
+		<b><br><br><font size="5">DR. GULSHAN GOYAL</font><br><br></b>
+		<b>Educational qualification:</b> B.E.(CSE), M.Tech.(CSE), Ph. D. in Computer Science & Engineering.<br>
+		<b>Area of Specialisation:</b> Digital Image Processing, Theory of Computation, Compiler Design, Design and Analysis of Algorithms, Research Methodology, Discrete Structures, Statistical Models for Computer Science, Software Engineering , C, C++, MATLAB.<br>
+		<b>Additional role in college:</b> Assistant Professor In-charge(Exam & Results), NSS/ NCC Program officer, Joint In-charge Sessional, Incharge(Exam & Results): CSE Department, Member NBA of Committee: CSE Department, Joint In-charge Stationary: CSE Department.<br>
+		<b>Contact:</b> gulshangoyal@ccet.ac.in, 91-9417506206.
+	</font></div>
+
+</div>
+<br><br>
+
+ <div class="row">
+
+ 		<div class="col-6 "; style="width: 40%">
+		<img src="images/sunita.jpg" width="200" style="border-radius: 3px">
+	 	<font face="Open Sans Semibold">
+		<b><br><br><font size="5">DR. SUNITA</font><br><br></b>
+		<b>Educational qualification:</b> B.E.(CSE), M.E.(CSE), Pursuing PHD(CSE).<br>
+		<b>Area of Specialisation:</b> Design & Analysis of Algorithm, Data Structures.<br>
+		<b>Additional role in college:</b> Time Table Incharge Incharge, Women Grevience Cell, Anti-Ragging.<br>
+		<b>Contact:</b> sunita@ccet.ac.in.
+</font></div>
+
+	<div class="col-6 "; style="width: 40%">
+	<img src="images/amit.jpg" width="200" style="border-radius: 3px">
+	 <font face="Open Sans Semibold">
+		<b><br><br><font size="5">ER. AMIT CHHABRA</font><br><br></b>
+		<b>Educational qualification:</b> B.E(CSE), M.E(CSE), Pursuing P.hd.<br>
+		<b>Area of Specialisation:</b> Theory Of Computation, Compiler Design, Discrete Structure, Design , Analysis and Algorithm, Wireless Networks.<br>
+		<b>Contact:</b> amitchhabra@ccet.ac.in, +91-9888623825, +91-9779246188.
+
+</font></div>
+</div>
+<br><br>
+
+ <div class="row">
+
+ 		<div class="col-6 "; style="width: 40%">
+		<img src="images/ankit.jpg" width="200" style="border-radius: 3px">
+	 	<font face="Open Sans Semibold">
+		<b><br><br><font size="5">ER. ANKIT GUPTA</font><br><br></b>
+		<b>Educational qualification:</b> B.E.(CSE), M.Tech(CSE), Pursuing PHD(CSE).<br>
+		<b>Area of Specialisation:</b> Artificial Intelligence, Web Intelligence, Web Analytics, Multi Criteria Decision Making, Information Retrieval.<br>
+		<b>Additional role in college:</b> Memeber IQAC Cell, SPOC for Infosys Campus Connect, Faculty Incharge 8th Sem Training/T&P CSE, Project Co-ordinator Final Year CSE, Faculty Incharge Final year CSE.<br>
+		<b>Contact:</b> ankit@ccet.ac.in, +91-8725014479.
+
+</font></div>
+
+		<div class="col-6 "; style="width: 40%">
+		<img src="images/ssingh.jpg" width="200" style="border-radius: 3px">
+	 <font face="Open Sans Semibold">
+		<b><br><br><font size="5">ER. SARABJEET SINGH</font><br><br></b>
+		<b>Educational qualification:</b> B.E.(CSE), M.E.(CSE) ,Pursuing PHD.<br>
+		<b>Area of Specialisation:</b> High Performance Computing, Computer Graphics, C, C++, CUDA-C.<br>
+		<b>Additional role in college:</b> Assistant Professor Incharge Exams Incharge Sports.<br>
+		<b>Contact:</b> ssingh@ccet.ac.in, +91-94637394.
+
+
+</font></div>
+</div>
+<br><br>
+
+ <div class="row">
+
+ 	<div class="col-6 "; style="width: 40%">
+	<img src="images/sudhakar.jpg" width="200" style="border-radius: 3px">
+	 <font face="Open Sans Semibold">
+		<b><br><br><font size="5">ER. SUDHAKAR KUMAR</font><br><br></b>
+		<b>Educational qualification:</b> B.Tech(CSE), M.Tech(CSE).<br>
+		<b>Area of Specialisation:</b> Human Computer Interaction, Machine Learning, Software Engineering, Data Structures & Programming.<br>
+		<b>Additional role in college:</b> Assistant In Charge Website, Faculty Mentor ACM@CCET Student Chapter.<br>
+		<b>Contact:</b> sudhakar@ccet.ac.in, 91-8434518635.
+
+
+</font></div>
+
+	<div class="col-6 "; style="width: 40%">
+	<img src="images/animesh.jpg" width="200" style="border-radius: 3px">
+	 <font face="Open Sans Semibold">
+		<b><br><br><font size="5">ER. ANIMESH SINGH</font><br><br></b>
+		<b>Educational qualification:</b> B.E. (CSE), M.TECH. (CSE), Pursuing Ph.D(CSE).<br>
+		<b>Area of Specialisation:</b> Image Processing, Software Engg., Computer System Architecture, C/C++.<br>
+		<b>Contact:</b> animeshsingh@ccet.ac.in, +91-9584035345.
+</font></div>
+
+</div><br><br>
+</div>
+</p>	
+
+</body>
+</html>

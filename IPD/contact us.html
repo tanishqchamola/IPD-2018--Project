@@ -1,0 +1,148 @@
+<?php include "db2.php";?>
+<html>
+<head>
+
+<title>
+COMPUTATION DATABASE
+</title>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  	<link rel = "stylesheet" type ="text/css" href= "style.css">
+</head>
+
+
+<body>
+
+<div class="jumbotron" style="margin-bottom: 0px;">
+	<h1>CHANDIGARH COLLEGE OF ENGINERING AND TECHNOLOGY</h1>
+	<p><h5>Signed in as <?=$_SESSION['sess_fullname'];?>.</h5></p>	
+</div>
+
+	<nav class="navbar navbar-default sticky-top navbar-expand-md navbar-dark bg-primary">
+
+		<a class="navbar-brand" href="#">CCET</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarmenu">
+			<ul class="navbar-nav ml-auto"> <!-- ml for right, md for left, mx for centre (alignment)-->
+				
+				<li class="nav-item active">
+					<a class="nav-link" href="index.php">Home</a>
+				</li>
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">Department</a>
+					<span class="caret"></span>
+
+					<div class="dropdown-menu" aria-labelledby="navbardropdown"> <!-- aria-labelledby used for pointing where it is linked to-->
+						<a class="dropdown-item" href="#">CSE</a>
+
+      					<a class="dropdown-item" href="#">ECE</a>
+      					
+      					<a class="dropdown-item" href="#">MECH</a>
+      					
+      					<a class="dropdown-item" href="#">CIVIL</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">Faculty</a>
+					<span class="caret"></span>
+
+					<div class="dropdown-menu" aria-labelledby="navbardropdown"> <!-- aria-labelledby used for pointing where it is linked to-->
+						<a class="dropdown-item" href="csefaculty.html">CSE</a>
+
+      					<a class="dropdown-item" href="#">ECE</a>
+      					
+      					<a class="dropdown-item" href="mechfaculty.html">MECH</a>
+      					
+      					<a class="dropdown-item" href="#">CIVIL</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">Search</a>
+					<span class="caret"></span>
+
+					<div class="dropdown-menu" aria-labelledby="navbardropdown"> <!-- aria-labelledby used for pointing where it is linked to-->
+						<a class="dropdown-item" href="db2.php">Faculty</a>
+      					
+      					<a class="dropdown-item" href="lab.php">Room No.</a>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="team.html">Team</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="contact us.html">Contact Us</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="logout.php">Logout</a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+
+<img src="images/HEADER2.jpg" id="header" alt="">
+<br><br><br>
+
+	<div class="container">
+		<div class="row">
+		<strong>TELEPHONE NUMBER - </strong>+91-172-2750872, +91-172-2750943, +91-172-2750947<br>
+		</div>
+
+		<div class="row">
+		<strong>FAX NO. - </strong>0172-2750872 <br>
+		</div>
+
+		<div class="row">
+		<strong>PRINCIPAL - </strong>principal@ccet.ac.in<br>
+		</div>
+
+		<div class="row">
+		<strong>ADMISSION HELPDESK - </strong></strong>admission@ccet.ac.in, +91 172-2750947<br>
+		</div>
+
+		<div class="row">
+		<strong>ACADEMICS ENQUIRY - </strong>academics@ccet.ac.in<br>
+		</div>
+
+		<div class="row">
+		<strong>TRAINING AND PLACEMENTS - </strong>tpo@ccet.ac.in, +91 9414403565<br>
+		</div>
+
+		<div class="row">
+		<strong>TENDER ENQUIRY - </strong>Mr. Kulbhushan Chaudhary(AC(F&A)) :- 0172 2750943<br>
+		</div>
+
+		<div class="row">
+		<strong>MAILING ADDRESS - </strong> Chandigarh College Of Engineering & Technology(CCET), Sector-26 , Chandigarh, Pincode: 160019, India.<br><br>
+		</div>
+
+		<div class="row">
+		<strong>OFFICIAL WEBSITE - <a href="http://www.ccet.ac.in/">http://www.ccet.ac.in/</a></strong><br><br>
+		</div>	
+
+		&nbsp
+
+		<div class="row">
+		<a href="https://www.google.com/maps/d/viewer?msa=0&ie=UTF&mid=1SwuUSji3JnnAfCYp9s2rRdSGdz4&ll=30.726214000000017%2C76.80794100000003&z=17">Check on Google Maps</a><br><br>
+		</div>
+
+</body>
+</html>
