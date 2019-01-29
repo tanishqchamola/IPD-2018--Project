@@ -1,35 +1,32 @@
-* {
-	margin: 0;
-	padding: 0;
-
-}
-
-@font-face{
-  font-family: Telefon;
-  src: url('fonts/telefon.ttf');
-  font-family: Open Sans Semibold;
-  src: url('fonts/OpenSans-Semibold.ttf');
-}
-
 body{
-	background-color: #ffffff;
-	font-family: Open Sans Semibold, Georgia, Times New Roman;
-	color: #000000;
+	background-image: url(images/bg.jpg);
+	background-size: cover;
 }
 
 #header{
 	width: 100%;
 }
-
-.nav-link, .nav-item{
-  font-size: 18px;
+p{
+	font-size: 17px;
 }
 
+.nav-link{
+  font-size: 18px;
+  border-radius: 20px;
+}
+.nav-item{
+	padding-right: 5px;
+}
+.nav-link:hover{
+	background-color: rgb(161,210,255);
+	border-radius: 20px;
+}
 .dropdown-menu{
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 .dropdown-item:hover{
+  border-radius: 40px;
   background-color: rgb(230,230,230);
 }
 
@@ -38,18 +35,20 @@ div.gallery
 	box-shadow: 3px 3px 10px grey;
 }
 
-#searchbox{
-	position: relative;
-	left: 40%;
-	right:40%;
-	width: 20%;
-}
-
 #greybar{
 	background-color: rgb(34,34,34);
 }
-#logincont{
-	background-image: url(images/bg.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
+.navbar { 
+	background-color: rgba(255,255,255,.2);
+	-webkit-backdrop-filter: blur(100px);
+}
+.semicircle{
+	border-radius: 50px;
+}
+.form-group{
+	width:50%;
+	margin-left: 25%;
+}
+.form-control{
+	height: 40px;
 }
